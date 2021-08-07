@@ -1,0 +1,57 @@
+.cool{
+    background-image: linear-gradient(#d16ba5 ,#9a9ae1 ,#5ffbf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+/* làm animation border chuyển động*/
+.borderbuf{
+    width:max-content;
+    height: max-content;
+    background-color:whitesmoke;
+    color:pink;
+    font-family: cursive;
+    text-align: center;
+} 
+.box{
+    border:10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: 
+    linear-gradient(var(--angle) , 
+    #d16ba5, #69bff8, #5ffbf1 );
+    animation: 5s rotate linear infinite;
+    -angle: 0deg;
+}
+@keyframes rotate {
+    to{
+        --angle: 360deg;
+    }
+}
+@property --angle {
+    syntax:'<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+/* làm trái tim bằng position */
+.heart1{
+    position: relative;
+    top:-50px;
+    left:300px;
+    height: 160px;
+    width: 100px;
+    background-color:red;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(45deg);
+}
+.heart1::before{
+    content: "";
+    position:absolute;
+    top:30px;
+    left:-30px;
+    height: 160px;
+    width: 100px;
+    background-color:red;
+    border-radius:200px 200px 0 0;
+    transform: rotate(-90deg);
+}

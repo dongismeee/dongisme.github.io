@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Dongisme</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="/all/file css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/web_responsive.css">
+</head>
+<body>
+     <div class="sub-header">
+            <div class="navbar">
+                    <div class="logo-img">
+                            <a href="#"><img src="/all/anh_img/eduford_img/logo.png" alt=""></a>
+                    </div>
+                    <div class="nav-link" id="navlink">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                       
+                        <uL>
+                            <li><a href="web.html">HOME</a></li>
+                            <li><a href="about-us.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </uL> 
+                    </div>
+                    <i class="fa fa-bars bass" onclick="showMenu()"></i>
+            </div>
+            <h1>CONTACT US</h1>
+     </div>    
+     <!-- CONTACT US  -------------->
+     <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786539269224!2d55.27218771500953!3d25.197196983896188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1svi!2s!4v1628244886488!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+     <div class="contact-us">
+         <div class="row">
+             <div class="contact-col">
+                 <div>
+                    <i class="fa fa-home" ></i>
+                    <span>
+                       <h5>THON 5, XA PHUC CAT</h5>
+                       <p>Quoc Oai ,Ha Noi ,VN </p>
+                    </span>
+                 </div>
+                 <div>
+                    <i class="fa fa-phone" ></i>
+                    <span>
+                        <h5>+84 865170832</h5>
+                        <p>Monday to Sunday ,Everytime ,10AM to 7PM</p>
+                    </span>
+                 </div>
+                 <div>
+                    <i class="fa fa-envelope-o" ></i>
+                    <span>
+                        <h5>betapchoi1708@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+             </div>
+             <div class="contact-col">
+              <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter email address" required>
+                <input type="text" placeholder="Enter your subject" required>
+                <textarea  rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="btn red-btn">Send Message</button>
+            </form>
+             </div>
+         </div>
+     </div>
+
+     <!-- footer ------------------------>
+<div class="footer">
+    <h2>About Us</h2>
+    <p>Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+       turpis nulla, eleifend faucibus est sollicitudin ut.<br> Maecenas ut venenatis
+        dong dang cap Maecenas ut venenatis i can fly .</p>
+    <div>
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>   
+    <div class="end"><p>Made With by Đông Is Me </p></div>
+</div>
+
+     <!-- javascrip -->
+     <script>
+         var navlink =document.getElementById("navlink");
+         function showMenu(){
+             navlink.style.right="0";
+         }
+         function hideMenu(){
+             navlink.style.right="-150px";
+         }
+
+     </script>
+</body>
+</html>

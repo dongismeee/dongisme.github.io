@@ -1,0 +1,31 @@
+.btn{
+    background:transparent;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+    top:50vh;
+    left:50vh;
+}
+.left{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color:red;
+    left:-16px;
+}
+.right{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color:red;
+    right:-16px;
+}  
+.btn:hover .left{
+    background-color:g#f44336;
+}
+.btn:hover .right{
+    background-color:#f44336;
+}
